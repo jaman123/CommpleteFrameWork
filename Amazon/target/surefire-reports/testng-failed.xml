@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Amazon]" parallel="methods">
+  <test name="Amazon features(failed)" parallel="methods">
+    <parameter name="browser_name" value="chrome"/>
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="os" value="win"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="browser_version" value="53.0"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
+    <classes>
+      <class name="testcases.TestSearchField">
+        <methods>
+          <include name="testSearchBox"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.TestSearchField -->
+    </classes>
+  </test> <!-- Amazon features(failed) -->
+</suite> <!-- Failed suite [Amazon] -->
